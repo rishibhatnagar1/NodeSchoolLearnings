@@ -8,3 +8,14 @@ var number = process.argv.slice(2)
 sum = number.reduce(function(curval,preval){return +curval + +preval;});
 /* when you use .readuce for an array, it means, all the values in the array have to reduce to one value ,maybe this is what they call production level code, I would have run a loop for the entire length of the array. Yup, I am stil supid */
 console.log(sum);
+/* Another way of doing this
+
+    var result = 0
+
+    for (var i = 2; i < process.argv.length; i++)
+      result += Number(process.argv[i])
+
+    console.log(result)
+
+
+*/
