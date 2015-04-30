@@ -7,4 +7,5 @@ http://visionmedia.github.io/masteringnode/book.html
 
 http://nodeschool.io/ 
 
+How to use iterm efficiently: http://teohm.com/blog/2012/03/22/working-effectively-with-iterm2/
 

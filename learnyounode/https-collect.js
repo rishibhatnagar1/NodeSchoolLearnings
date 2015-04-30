@@ -5,7 +5,7 @@ var url = process.argv[2];
 
 http.get(url, function (response) {
   response.setEncoding('utf8');
-  response.pipe(concatStream(function (data) {
+  response.pipe(concatStream(function (data) { //concatenates all the data flowing in.
     console.log(data.length);
     console.log(data);
   }));
