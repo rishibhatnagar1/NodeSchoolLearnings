@@ -1,0 +1,11 @@
+ <!--    <ul>
+    <!-- <% for (var i=0;i<skills.length;i++){%>
+        <li><%= skills[i] %></li>
+        <!--<%}%>
+    </ul>
+
+<!--<% for (var i=0;i<skills.length;i++){%>
+    <span>|<%= skills[i] %>|</span>
+    <!-- <% } %>
+-->
+     

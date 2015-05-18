@@ -1,11 +1,28 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset ="utf-8">
-    <title>Welcome </title>
-<body>
-    <h1> <%= title %></h1> <!-- %= lets you do a data bind, for using normal JS you can not chose to use =-->
-    <p>Maybe this wasn't all that good an idea. Just maybe, you know.</p>
-    </body>    
+    <% include partials/page/head.ejs %>
 </head>
+
+<body class="<%= classname%>">
+    <header>
+        <% include partials/page/header.ejs %>
+    </header>
+    <div class="container">
+        <h1><%=pagetitle%>  <%=title%></h1>
+        <p>You are on the page <b><%=title%></b>
+        </p>
+        <% if(typeof(skills)!== 'undefined' ){%>
+            <% for (var i=0;i<skills.length;i++){%>
+                <span>|<%= skills[i] %>|</span>
+                <% } %>
+                 <%   } %>
+
+    </div>
+    <!-- container-->
+    <%include partials/page/footer.ejs %>
+        <%include partials/page/jsdefaults.ejs %>
+</body>
+
 </html>
